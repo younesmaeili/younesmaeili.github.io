@@ -1,0 +1,69 @@
+/* style.css */
+
+/* Global body styles for font and background */
+body {
+    font-family: 'Inter', sans-serif;
+    /* Tailwind handles most background and text colors via classes on body */
+}
+
+/* Styling for section titles - custom border */
+.section-title {
+    border-bottom: 2px solid #2A9D8F; /* Teal green line */
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Dark mode section title border color */
+html.dark .section-title {
+    border-color: #4FD1C5; /* Lighter teal for dark mode */
+}
+
+/* Hover effect for sections to add visual interest */
+.hover-effect:hover {
+    transform: translateY(-3px); /* Slightly lift the element */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* Add a subtle shadow */
+}
+
+/* Dark mode hover effect for sections */
+html.dark .hover-effect:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3); /* Darker shadow for dark mode */
+}
+
+/* Icon visibility rules are no longer needed as the toggle button is removed */
+
+/* New styles for Search functionality */
+/* Search input focus style */
+#search-input:focus {
+    border-color: #2A9D8F; /* Teal green */
+}
+
+/* Dark mode search input */
+html.dark #search-input {
+    background-color: #374151; /* Gray-700 */
+    border-color: #4B5563; /* Gray-600 */
+}
+
+/* Dark mode search results background */
+html.dark #search-results div > ul > li {
+    background-color: #1F2937; /* Gray-800 */
+}
+
+/* Style for highlighted search terms */
+.text-yellow-500 {
+    color: #FBBF24; /* Tailwind's yellow-500 */
+}
+
+.dark .text-yellow-300 {
+    color: #FCD34D; /* Tailwind's yellow-300 for dark mode */
+}
+
+/* Style for highlighted search terms on the page */
+.highlight-term {
+    background-color: rgba(255, 255, 0, 0.5); /* A subtle yellow background */
+    padding: 2px 0; /* Add some padding for better visibility */
+    border-radius: 3px; /* Slightly rounded corners */
+}
+
+html.dark .highlight-term {
+    background-color: rgba(255, 255, 0, 0.3); /* Slightly darker yellow for dark mode */
+}
